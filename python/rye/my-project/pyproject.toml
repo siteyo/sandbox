@@ -5,7 +5,9 @@ description = "Add your description here"
 authors = [
     { name = "Saito Yuki", email = "phicyanoc@gmail.com" }
 ]
-dependencies = []
+dependencies = [
+    "flask>=2.0",
+]
 readme = "README.md"
 requires-python = ">= 3.8"
 
@@ -15,7 +17,12 @@ build-backend = "hatchling.build"
 
 [tool.rye]
 managed = true
-dev-dependencies = []
+dev-dependencies = [
+    "flake8>=5.0.4",
+    "isort>=5.12.0",
+    "mypy>=1.5.1",
+    "black>=23.7.0",
+]
 
 [tool.hatch.metadata]
 allow-direct-references = true
